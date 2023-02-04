@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Goriber Bank LTD</title>
+    <link rel="stylesheet" href="login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="boxs">
+      <div class="screen">
+        <div class="screen__content">
+          <form class="login">
+            <div class="had"><h3>Please Login Your Account</h3></div>
+            <div class="login__field">
+              <i class="login__icon fa fa-envelope"></i>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="admin@gamil.com"
+                required
+              />
+            </div>
+            <div class="login__field">
+              <i class="login__icon fa fa-lock"></i>
+              <input type="password" placeholder="admin" id="pass" />
+            </div>
+            <div style="color: red; display: none" id="wrong">
+              <strong>Wrong Information</strong>
+            </div>
+            <button
+              class="button login__submit"
+              id="loginbtn"
+              onclick="login()"
+            >
+              <span class="button__text">Log In Now</span>
+              <i class="button__icon fa fa-chevron-right"></i>
+            </button>
+          </form>
+        </div>
+        <div class="screen__background">
+          <span
+            class="screen__background__shape screen__background__shape4"
+          ></span>
+          <span
+            class="screen__background__shape screen__background__shape3"
+          ></span>
+          <span
+            class="screen__background__shape screen__background__shape2"
+          ></span>
+          <span
+            class="screen__background__shape screen__background__shape1"
+          ></span>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

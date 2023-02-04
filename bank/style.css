@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Raleway, sans-serif;
+}
+
+body {
+  background: linear-gradient(90deg, #c7c5f4, #776bcc);
+}
+
+.login__input {
+  border: none;
+  border-bottom: 2px solid #d1d1d4;
+  background: none;
+  padding: 10px;
+  padding-left: 24px;
+  font-weight: 700;
+  width: 75%;
+  transition: 0.2s;
+}
+.login__input::placeholder {
+  color: wheat;
+}
+
+.login__input:active,
+.login__input:focus,
+.login__input:hover {
+  outline: none;
+  border-bottom-color: #6a679e;
+}
+.login__icon {
+  color: wheat;
+}
+.login__submit {
+  background: #fff;
+  font-size: 14px;
+  margin-top: 30px;
+  padding: 16px 20px;
+  border-radius: 26px;
+  border: 1px solid #d4d3e8;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  color: #4c489d;
+  box-shadow: 0px 2px 2px #5c5696;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.login__submit:active,
+.login__submit:focus,
+.login__submit:hover {
+  border-color: #6a679e;
+  outline: none;
+}
+
+.button__icon {
+  font-size: 24px;
+  margin-left: auto;
+  color: #7875b5;
+}
+
+.card {
+  margin: 0 auto;
+  float: none;
+  background: linear-gradient(90deg, #7c78b8, #5d54a4);
+  border: none;
+}
+.card-body {
+  color: wheat;
+  font-weight: 500;
+}
+#total {
+  font-size: 25px;
+  font-weight: 600;
+}
+.card0 {
+  width: 46rem;
+}
+@media only screen and (max-width: 600px) {
+  .card0 {
+    width: 20rem;
+  }
+}

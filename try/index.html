@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>Input Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <input type="text" id="name" name="name" placeholder="Enter name.." />
+    <input type="submit" value="Submit" onclick="passvalue" />
+
+    <p id="demo"></p>
+    <script>
+      function passvalue() {
+        let name = document.getElementById("name").value;
+        sessionStorage.setItem("lastname", name);
+        let names = sessionStorage.getItem("lastname");
+        document.getElementById("demo").innerHTML = names;
+      }
+    </script>
+  </body>
+</html>
